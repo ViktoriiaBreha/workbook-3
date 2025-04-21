@@ -47,7 +47,7 @@ public class FamousQuotes {
                     System.out.println("Your random quote is: " + quotes[ran_quote]);
                     break;
                 case 3:
-                    System.out.println("Buy!");
+                    System.out.println("Bye!");
                     run = false;
             }
         }
