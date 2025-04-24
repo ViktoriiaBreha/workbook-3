@@ -3,6 +3,7 @@ package com.pluralsight;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+
 public class FormatDates {
     public static void main(String[] args) {
         LocalDateTime now = LocalDateTime.now();
@@ -32,12 +33,12 @@ public class FormatDates {
     }
 //Shows day of week, month day, year  current time
     static void WeekDay_Month_Day_Year_CurrentTime(LocalDateTime now) {
-        DateTimeFormatter format5 = DateTimeFormatter.ofPattern("eeee, MMM dd, yyyy  hh:mm");
+        DateTimeFormatter format5 = DateTimeFormatter.ofPattern("eeee, MMM dd, yyyy  hh:mm a");
         System.out.println(format5.format(now)  + " \u00DF display in GMT time");
     }
 //Shows current time on day-month-year
     static void currentTime_on_Day_Month_Year(LocalDateTime now) {
-        DateTimeFormatter format6 = DateTimeFormatter.ofPattern("H:mm 'on' dd-MMM-yyyy");
+        DateTimeFormatter format6 = DateTimeFormatter.ofPattern("H:mm a 'on' dd-MMM-yyyy");
         System.out.println(format6.format(now) + " \u00DF display in your local time zone");
     }
 }
